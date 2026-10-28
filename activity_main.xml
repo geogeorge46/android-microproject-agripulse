@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AgriPulse - Farming Activity Diary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Crop Name"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Planting Date (DD-MM-YYYY)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Irrigation Details"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/e4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harvest Details"
+            android:inputType="textCapSentences" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Record"
+            android:onClick="insert" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Records"
+            android:onClick="show" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Farming records will appear here"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
